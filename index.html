@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVMS Vet Gala 2026</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/avms-logo.webp"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/thin/style.css"
+    />
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+  </head>
+  <body>
+    <section class="hero-section">
+      <div class="overlay">
+        <header>
+          <nav class="navbar">
+            <div class="logo">
+              <img src="/assets/avms-logo.webp" alt="avms logo" width="60" />
+            </div>
+            <p>AVMS <span>Presents</span></p>
+          </nav>
+        </header>
+        <main class="hero-container">
+          <h1>Vet Gala <span class="hero-year">2026</span></h1>
+          <img
+            src="/assets/luxury separator.webp"
+            alt="separator"
+            class="separator"
+          />
+          <h2>An evening, elegace and celebration & connection</h2>
+          <p>
+            Join veterinary students, professionals and guests for a memorable
+            night of dining, networking and recognition.
+          </p>
+          <a href="#form">Reserve your seat</a>
+        </main>
+      </div>
+    </section>
+
+    <section class="event-details">
+      <div class="section-header">
+        <h2>Event Details</h2>
+        <img src="/assets/luxury separator.webp" alt="separator" />
+      </div>
+      <div class="event-card-wrap">
+        <article class="event-card">
+          <i class="ph-thin ph-calendar-dots"></i>
+          <div class="event-text">
+            <h3>Date</h3>
+            <p>Saturday</p>
+            <time datetime="2026-07-25">25th July, 2026</time>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <i class="ph-thin ph-map-pin"></i>
+          <div class="event-text">
+            <h3>Venue</h3>
+            <p>Grand Imperial Hotel</p>
+            <p>Jos, Nigeria</p>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <i class="ph-thin ph-clock"></i>
+          <div class="event-text">
+            <h3>Time</h3>
+            <time datetime="18:00">6:00PM</time>
+            <p>Prompt</p>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <i class="ph-thin ph-shirt-folded"></i>
+          <div class="event-text">
+            <h3>Dress Code</h3>
+            <p>Suit</p>
+            <p>Formal</p>
+          </div>
+        </article>
+      </div>
+      <article class="seats">
+        <div class="seats-outline">
+          <h3>Seats Remaining</h3>
+          <span id="seat-no">200</span>
+          <p>Hurry! Limited Seats Available</p>
+        </div>
+      </article>
+
+      <img src="/assets/luxury separator.webp" alt="separator" />
+
+      <h3
+        style="
+          font-family: var(--font-serif);
+          color: var(--gold);
+          font-size: var(--font-size-xl);
+          font-weight: var(--font-wt-thin);
+        "
+      >
+        Ready to Join Us?
+      </h3>
+      <p>thin out the form below to book your seat</p>
+
+      <i
+        class="ph-thin ph-caret-down"
+        style="
+          font-size: 3.5rem;
+          color: var(--gold);
+          animation: bounce 1.5s infinite linear;
+        "
+      ></i>
+    </section>
+
+    <section class="payment-details">
+      <div class="payment-form" id="form">
+        <div class="payment-wrap form">
+          <div class="payment-header">
+            <i class="ph-thin ph-user"></i>
+            <h3>TELL US ABOUT YOURSELF</h3>
+          </div>
+          <form action="" class="form" id="bookingForm">
+            <p class="section-subtitle">PERSONAL INFORMATION</p>
+
+            <div class="input-wrap">
+              <label for="fullName">Full Name</label>
+              <div class="input-icon-wrap">
+                <input
+                  type="text"
+                  id="fullName"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="input-wrap">
+              <label for="email">Email Address</label>
+              <div class="input-icon-wrap">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="input-wrap">
+              <label for="phoneNumber">Phone Number</label>
+              <div class="input-icon-wrap">
+                <input
+                  type="tel"
+                  id="phoneNumber"
+                  placeholder="Whatsapp Preferred"
+                  required
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="separator-wrap">
+          <img src="/assets/luxury separator.webp" alt="separator" />
+        </div>
+
+        <div class="payment-wrap status">
+          <div class="payment-header">
+            <i class="ph-thin ph-identification-card"></i>
+            <h3>YOUR STATUS</h3>
+          </div>
+
+          <div class="card-group radio-group">
+            <label class="selection-card">
+              <input
+                type="radio"
+                name="ticketStatus"
+                value="5000"
+                data-name="Student"
+                checked
+              />
+              <div class="card-content">
+                <div class="check-indicator">
+                  <i class="ph-thin ph-check"></i>
+                </div>
+                <i class="ph-thin ph-graduation-cap card-icon"></i>
+                <span class="card-title">STUDENT</span>
+                <span class="card-price">₦ 5000</span>
+              </div>
+            </label>
+
+            <label class="selection-card">
+              <input
+                type="radio"
+                name="ticketStatus"
+                value="12000"
+                data-name="Graduating Student"
+                checked
+              />
+              <div class="card-content">
+                <div class="check-indicator">
+                  <i class="ph-thin ph-check"></i>
+                </div>
+                <i class="ph-thin ph-student card-icon"></i>
+                <span class="card-title">GRADUATING STUDENT</span>
+                <span class="card-price">₦ 12000</span>
+              </div>
+            </label>
+
+            <label class="selection-card">
+              <input
+                type="radio"
+                name="ticketStatus"
+                value="7000"
+                data-name="Veterinarian"
+              />
+              <div class="card-content">
+                <div class="check-indicator">
+                  <i class="ph-thin ph-check"></i>
+                </div>
+                <i class="ph-thin ph-stethoscope card-icon"></i>
+                <span class="card-title">VETERINARIAN</span>
+                <span class="card-price">₦ 7000</span>
+              </div>
+            </label>
+
+            <label class="selection-card">
+              <input
+                type="radio"
+                name="ticketStatus"
+                value="6000"
+                data-name="Guest"
+              />
+              <div class="card-content">
+                <div class="check-indicator">
+                  <i class="ph-thin ph-check"></i>
+                </div>
+                <i class="ph-thin ph-users-three card-icon"></i>
+                <span class="card-title">GUEST</span>
+                <span class="card-price">₦ 6000</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="separator-wrap">
+          <img src="/assets/luxury separator.webp" alt="separator" />
+        </div>
+
+        <div class="payment-wrap magazine">
+          <div class="payment-header">
+            <i class="ph-thin ph-book-open"></i>
+            <h3>EVENT MAGAZINE</h3>
+          </div>
+
+          <div class="card-group checkbox-group">
+            <label class="selection-card">
+              <input type="checkbox" id="magazineToggle" value="4000" />
+              <div class="card-content">
+                <div class="check-indicator">
+                  <i class="ph-thin ph-check"></i>
+                </div>
+                <i class="ph-thin ph-book card-icon"></i>
+                <span class="card-title">VET GALA MAGAZINE</span>
+                <span class="card-price">+ ₦ 4000</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticket-summary">
+        <div class="summary-header">
+          <i class="ph-thin ph-ticket"></i>
+          <h3>TICKET SUMMARY</h3>
+        </div>
+
+        <div class="summary-breakdown">
+          <div class="summary-row">
+            <div class="summary-label">
+              <span class="label-title">Ticket Type</span>
+              <span class="label-desc" id="displayStatusName">Student</span>
+            </div>
+            <span class="summary-price" id="displayStatusPrice">₦ 00.00</span>
+          </div>
+
+          <div class="summary-row">
+            <div class="summary-label">
+              <span class="label-title">Magazine</span>
+              <span class="label-desc" id="displayMagDesc">Not Selected</span>
+            </div>
+            <span class="summary-price" id="displayMagPrice">₦ 00.00</span>
+          </div>
+
+          <div class="summary-total">
+            <span>TOTAL AMOUNT</span>
+            <h2 id="displayTotal">₦ 360.00</h2>
+          </div>
+        </div>
+
+        <div class="ticket-preview">
+          <div class="preview-inner">
+            <h4>VET GALA 2026</h4>
+            <div class="ticket-divider">
+              <img src="/assets/luxury separator.webp" alt="separator" />
+            </div>
+            <h3 id="previewName">Your Name</h3>
+            <p id="previewStatus">Student</p>
+            <p id="previewMag">No Magazine</p>
+            <div class="ticket-footer">
+              <span>25TH JULY 2026 • 6:00 PM</span>
+              <span>GRAND IMPERIAL HOTEL, JOS</span>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="pay-btn" id="payButton">
+          <i class="ph-fill ph-lock-key"></i> PAY ₦ 360.00
+        </button>
+
+        <div class="trust-section">
+          <p>
+            Secure payment powered by
+            <img src="/assets/paystack.webp" alt="paystack logo" />
+          </p>
+          <ul class="trust-list">
+            <li><i class="ph-thin ph-lock-key"></i> Secure Payment</li>
+            <li>
+              <i class="ph-thin ph-check-circle"></i> Instant Confirmation
+            </li>
+            <li><i class="ph-thin ph-envelope-simple"></i> Email Receipt</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="footer-logo">
+        <img src="/assets/avms-logo.webp" alt="avms logo" />
+        <div class="footer-logo-text">
+          <h4>AVMS</h4>
+          <p>Association of Veternary Medical Students</p>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <a
+          href="https://www.facebook.com/AVMS.UJ?mibextid=ZbWKwL"
+          target="_blank"
+          ><i class="ph-thin ph-facebook-logo"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/avmsunijos?igsh=eHcwajRieHZ2Z3gz"
+          target="_blank"
+          ><i class="ph-thin ph-instagram-logo"></i
+        ></a>
+        <a
+          href="https://www.tiktok.com/@avms_unijos?_r=1&_d=f37fi875f7fkl9wv"
+          target="_blank"
+          ><i class="ph-thin ph-tiktok-logo"></i
+        ></a>
+      </div>
+      <img
+        src="/assets/gala-footer.webp"
+        alt="line image of a cat and dog"
+        style="width: 300px; margin: var(--spacing-md) 0"
+      />
+
+      <div class="separator-wrap">
+        <img src="/assets/luxury separator.webp" alt="separator" />
+      </div>
+
+      <div class="copyright">
+        &copy; 2026 AVMS Gala. All Rights Reserved |
+        <a href="https://wa.me/2348100334346" target="_blank">PERFEXION INC.</a>
+      </div>
+    </footer>
+
+    <div class="modal-overlay" id="paymentModal">
+      <div class="modal-box" id="successModal" style="display: none">
+        <div class="modal-icon success">
+          <i class="ph-thin ph-check-circle"></i>
+        </div>
+        <h3>Payment Successful</h3>
+        <p>
+          Your ticket has been secured. A confirmation email has been sent to
+          you.
+        </p>
+        <div class="receipt-details">
+          <p>
+            <strong>Transaction ID:</strong> <span id="successTxId">---</span>
+          </p>
+          <p>
+            <strong>Ticket Number:</strong>
+            <span id="successTicketNo">---</span>
+          </p>
+        </div>
+        <button class="modal-btn" onclick="closeModal()">Close</button>
+      </div>
+
+      <div class="modal-box" id="failModal" style="display: none">
+        <div class="modal-icon failure">
+          <i class="ph-thin ph-x-circle"></i>
+        </div>
+        <h3>Payment Incomplete</h3>
+        <p>We could not process your payment at this time. Please try again.</p>
+        <button class="modal-btn outline" onclick="closeModal()">
+          Try Again
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

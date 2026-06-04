@@ -1,0 +1,49 @@
+    <section class="payment-details">
+      <div class="payment-form">
+        <div class="payment-wrap form">
+          <div class="payment-header">
+            <i class="ph-thin ph-user"></i>
+            <h3>Tell us about yourself</h3>
+          </div>
+          <form action="" class="form">
+            <h4>Personal Information</h4>
+            <div class="input-wrap">
+              <label for="fullName">Full Name</label>
+              <input
+                type="text"
+                id="fullName"
+                placeholder="Enter Your Full Name"
+              />
+            </div>
+
+            <div class="input-wrap">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="vetgala@example.com"
+              />
+            </div>
+
+            <div class="input-wrap">
+              <label for="phoneNumber">Phone Number</label>
+              <input
+                type="number"
+                id="phoneNumber"
+                placeholder="Whatsapp Preferred"
+              />
+            </div>
+          </form>
+        </div>
+
+        <img src="/assets/luxury separator.webp" alt="separator" />
+
+        <div class="payment-wrap status">
+          <div class="payment-header">
+            <i class="ph-thin ph-user"></i>
+            <h3>Your Status</h3>
+          </div>
+        </div>
+      </div>
+      <div class="ticket-summary"></div>
+    </section>
