@@ -329,7 +329,7 @@ header {
 }
 
 .separator-wrap {
-  margin: 0 auto;
+  margin: var(--spacing-xl) auto;
   width: 70%;
 }
 
