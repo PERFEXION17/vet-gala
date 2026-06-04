@@ -135,10 +135,10 @@ header {
   font-size: var(--font-size-hero);
   font-weight: var(--font-wt-thin);
   text-transform: uppercase;
+  line-height: 1;
 }
 
 .hero-year {
-  margin-top: -8%;
   display: block;
   color: var(--gold);
   font-size: 5.5rem;
