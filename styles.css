@@ -875,6 +875,19 @@ header {
   background: var(--gold-gradient-hov);
 }
 
+.fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (min-width: 1024px) {
   .hero-container {
     width: 45%;
@@ -892,13 +905,13 @@ header {
     text-align: center;
   }
 
-  .event-card-wrap{
+  .event-card-wrap {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .event-card{
+  .event-card {
     width: max-content;
     min-width: 20%;
   }

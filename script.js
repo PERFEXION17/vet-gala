@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 3. Setup Paystack Pop
     let handler = PaystackPop.setup({
-      key: "pk_test_d20590ef86fe4669a36f97288826af15ca69c90b", 
+      key: "pk_test_d20590ef86fe4669a36f97288826af15ca69c90b",
       email: emailInput.value.trim(),
       amount: currentTotalAmount * 100, // Paystack requires amount in kobo
       currency: "NGN",
@@ -231,4 +231,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initial UI Setup on page load
   updateTicketOverview();
+});
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  {
+    threshold: 0.15,
+  },
+);
+
+document.querySelectorAll(".fade-up").forEach((el) => {
+  observer.observe(el);
 });
