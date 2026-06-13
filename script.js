@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 3. Setup Paystack Pop
     let handler = PaystackPop.setup({
-      key: "pk_test_d20590ef86fe4669a36f97288826af15ca69c90b",
+      key: CONFIG.PAYSTACK_PUBLIC_KEY,
       email: emailInput.value.trim(),
       amount: currentTotalAmount * 100, // Paystack requires amount in kobo
       currency: "NGN",
